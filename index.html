@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6477be421a.js" crossorigin="anonymous"></script>
+  <title>Marmeto - Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="header">
+    <nav>
+      <div class="logo-div">
+        <img class="logo-img"
+          src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=n9OlYBi3lLgao-ot~ap5Z326joLdbNPpUqsa5OBcqq1Eo~h0p2fLdjKg1crCasBe6cDXz3yIV9x7XHEumKaVl7SAid~svqDAO7Vwj96~i~2tdPTjEwKK0Gkj8a7lwoKsqfcxMJmXxOnV9UgMj3ZoBt6CyoaDiPbdiqRdEIalqlf5jvS66MLu0tyTaBDLFI6B7v57Xl134~TfVDudQlRapgehPCB9U-m4hkfV7HH8pfOI-CESgLAVJ8yCCxzj25qaf~N245WwDdqczT4H~xkIzCStDwt2UpVHH7RUhJVEuaLB1Eh3TcXRrxpYOed67CnqioxmZpiCT01~NtruOe2EmQ__"
+          alt="Logo" />
+        <h2>Marmeto</h2>
+      </div>
+
+      <div class="nav-middle">
+        <a href="">Home</a>
+        <a href="">Shop</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </nav>
+  </section>
+
+  <section id="page-header" class="about-header">
+    <div>
+      <img
+        src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=n9OlYBi3lLgao-ot~ap5Z326joLdbNPpUqsa5OBcqq1Eo~h0p2fLdjKg1crCasBe6cDXz3yIV9x7XHEumKaVl7SAid~svqDAO7Vwj96~i~2tdPTjEwKK0Gkj8a7lwoKsqfcxMJmXxOnV9UgMj3ZoBt6CyoaDiPbdiqRdEIalqlf5jvS66MLu0tyTaBDLFI6B7v57Xl134~TfVDudQlRapgehPCB9U-m4hkfV7HH8pfOI-CESgLAVJ8yCCxzj25qaf~N245WwDdqczT4H~xkIzCStDwt2UpVHH7RUhJVEuaLB1Eh3TcXRrxpYOed67CnqioxmZpiCT01~NtruOe2EmQ__"
+        alt="#" />
+    </div>
+    <div>
+      <h1>Cart</h1>
+    </div>
+    <div>
+      <h4>Home</h4>
+      <span>></span>
+      <h3>Cart</h3>
+    </div>
+  </section>
+
+  <main class="container cart-container">
+    <div class="cart-items">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- <tr>
+                        <td>
+                            <img src="https://via.placeholder.com/80" alt="Asgaard sofa" class="product-image">
+                            Asgaard sofa
+                        </td>
+                        <td>Rs. 250,000.00</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantity-input" id="quantity">
+                        </td>
+                        <td id="subtotal">Rs. 250,000.00</td>
+                    </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <div class="cart-totals">
+      <h2>Cart Totals</h2>
+      <div class="total-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">Rs. 250,000.00</span>
+      </div>
+      <div class="total-row">
+        <span>Total</span>
+        <span id="cart-total">Rs. 250,000.00</span>
+      </div>
+      <button class="checkout-btn">Check Out</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="high-quality">
+      <img src="assets/image2.png" alt="" />
+      <div>
+        <h3>High Quality</h3>
+        <p>crafted from top materials</p>
+      </div>
+    </div>
+
+    <div class="high-quality">
+      <img src="assets/image3.png" alt="" />
+      <div>
+        <h3>Warranty Protection</h3>
+        <p>Over 2 years</p>
+      </div>
+    </div>
+
+    <div class="high-quality">
+      <img src="assets/image1.png" alt="" />
+      <div>
+        <h3>Free Shipping</h3>
+        <p>Order over 150 $</p>
+      </div>
+    </div>
+
+    <div class="high-quality">
+      <img src="assets/image4.png" alt="" />
+      <div>
+        <h3>24 / 7 Support</h3>
+        <p>Dedicated support</p>
+      </div>
+    </div>
+  </footer>
+  <div id="loading" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
